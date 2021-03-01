@@ -1,0 +1,55 @@
+/*Makes background image covers all screen in any resolution*/
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*Sets some space between the conteiner element and the other elements*/
+.conteiner{
+	margin: 20px 200px;
+}
+/*Styles for the search input to match its conteiner's styles*/
+input[type="text"]{
+	width: 100%;
+    border: none;
+	outline: none;
+	text-align: left;	
+	margin-bottom: 10px;
+	padding-top:5px;
+	background-color:rgba(255,255,255,0);
+}
+/*Necessary to change its color to match the other elements*/
+code{
+	color: #000;
+}
+/*Div class that holds input structure and makes it match the other elements*/
+.input{
+	display:flex;
+	padding-left: 40%;
+	background-color: rgba(255,255,255,.8);		
+}
+/*Align odd id image elements to the center of the conteiner col*/
+.odd{
+	text-align: center;
+}
+/*Align even id image elements to the left of the conteiner col*/
+.even{
+	text-align: left;
+}
+/*Changes mouse pointer when it's over any degree letter*/
+.unit{
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+  /*Sets all margin to be equal on page resize*/
+  .conteiner {
+ 
+    margin: 20px;
+  }
+  /*Sets even elements to the center of their conteiner*/
+  .even{
+	text-align: center;
+  }
+}
